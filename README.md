@@ -1,2 +1,2 @@
 # rsschool-cv
-first try
+https://YKoshko.github.io/rsschool-cv/
