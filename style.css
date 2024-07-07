@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0f0b07;
+    background-color: #444057;
+  }
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: #E6DDD5;
+  }
+
+  .section-item a {
+    color: #051f09;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
+  .section-item a:hover {
+    color: #4d2323;
+  }
+
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F1C9D6;
+  }
+  
+  .section {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: calc(50% - 20px);
+    padding: 10px;
+    padding-bottom: 35px;
+  }
+
+  @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+
+  .section-title {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #541528;
+  }
+
+  .link {
+    text-decoration: none;
+    color: #09270d;
+    transition: color 0.5s;
+  }
+  
+  .link:hover {
+    color: #043e0d;
+  }
+
+  a {
+    padding: 2px; /* Поля вокруг текста */
+    transition: 1s linear; /* Время изменения */
+   }
+   a:hover {
+    color: #5a2525; /* Цвет текста */
+   }
+
+   .section-profile-logo {
+    width: 135px;
+    height: 165px;
+    object-fit: cover;
+    transition: .3s;
+  }
+
+  .section-profile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 30px 35px;
+    border-bottom: 15px solid #d7d1c9;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 4px);
+    max-width: 1196px;
+    min-width: 900px;
+    height: 150px;
+    background-color: var(--color-main);
+    border: 2px solid var(--color-border);
+    border-top: none;
+}
+
+.footer-item {
+    margin: 5px 20px;
+}
+
+#footer-github {
+    max-width: 100px;
+    padding-left: 10px;
+}
+
+#logo-rs {
+    width: 100px;
+}
