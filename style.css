@@ -1,13 +1,135 @@
-{\rtf1\ansi\ansicpg1251\cocoartf2708
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
-{\colortbl;\red255\green255\blue255;\red42\green42\blue42;\red255\green255\blue254;\red107\green0\blue1;
-\red0\green0\blue0;\red251\green0\blue7;\red0\green0\blue255;}
-{\*\expandedcolortbl;;\cssrgb\c21961\c21961\c21961;\cssrgb\c100000\c100000\c99608;\cssrgb\c50196\c0\c0;
-\cssrgb\c0\c0\c0;\cssrgb\c100000\c0\c0;\cssrgb\c0\c0\c100000;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
+* {
+    box-sizing: border-box;
+  }
 
-\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 <\cf4 \strokec4 p\cf0 \strokec5  \cf6 \strokec6 style\cf2 \strokec2 =\cf7 \strokec7 "font-size: 25px;"\cf2 \strokec2 >\cf0 \strokec5 first\cf2 \strokec2 </\cf4 \strokec4 p\cf2 \strokec2 >\cf0 \cb1 \strokec5 \
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0f0b07;
+    background-color: #444057;
+  }
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: #E6DDD5;
+  }
+
+  .section-item a {
+    color: #051f09;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
+  .section-item a:hover {
+    color: #4d2323;
+  }
+
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F1C9D6;
+  }
+  
+  .section {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: calc(50% - 20px);
+    padding: 10px;
+    padding-bottom: 35px;
+  }
+
+  @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+
+  .section-title {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #541528;
+  }
+
+  .link {
+    text-decoration: none;
+    color: #09270d;
+    transition: color 0.5s;
+  }
+  
+  .link:hover {
+    color: #043e0d;
+  }
+
+  a {
+    padding: 2px; /* Поля вокруг текста */
+    transition: 1s linear; /* Время изменения */
+   }
+   a:hover {
+    color: #5a2525; /* Цвет текста */
+   }
+
+   .section-profile-logo {
+    width: 135px;
+    height: 165px;
+    object-fit: cover;
+    transition: .3s;
+  }
+
+  .section-profile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 30px 35px;
+    border-bottom: 15px solid #d7d1c9;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 4px);
+    max-width: 1196px;
+    min-width: 900px;
+    height: 150px;
+    background-color: var(--color-main);
+    border: 2px solid var(--color-border);
+    border-top: none;
+}
+
+.footer-item {
+    margin: 5px 20px;
+}
+
+#footer-github {
+    max-width: 100px;
+    padding-left: 10px;
+}
+
+#logo-rs {
+    width: 100px;
 }
